@@ -1,6 +1,12 @@
 # استيراد للأدوات والمكاتب التي ستساعدنا
 import fitz
 from PIL import Image
+import os 
+
+# إنشاء مجلد الصور الناتجة في حال لم يكن موجود
+if os.path.isdir('./img'):
+
+    os.mkdir("./img")
 
 # فتح ملف ال PDF
 doc = fitz.open('مسار_الملف.pdf')
