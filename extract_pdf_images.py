@@ -4,7 +4,7 @@ from PIL import Image
 import os 
 
 # إنشاء مجلد الصور الناتجة في حال لم يكن موجود
-if os.path.isdir('./img'):
+if not os.path.isdir('./img'):
 
     os.mkdir("./img")
 
